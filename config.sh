@@ -52,6 +52,12 @@ echo MAKE_FLAGS=-j$((CORE_COUNT + 2)) > .tmp-config
 echo GECKO_OBJDIR=$PWD/objdir-gecko >> .tmp-config
 
 case "$1" in
+"dream_sapphire")
+	echo DEVICE=dream_sapphire >> .tmp-config &&
+	repo_sync dream_sapphire &&
+	(cd device/htc/dream_sapphire && ./extract-files.sh)
+	;;
+
 "galaxy-s2")
 	echo DEVICE=galaxys2 >> .tmp-config &&
 	repo_sync galaxy-s2 &&
@@ -104,6 +110,7 @@ case "$1" in
 	echo Usage: $0 \(device name\)
 	echo
 	echo Valid devices to configure are:
+	echo - dream_sapphire
 	echo - galaxy-s2
 	echo - galaxy-nexus
 	echo - nexus-s
