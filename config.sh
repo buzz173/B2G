@@ -45,7 +45,7 @@ if [ -n "$2" ]; then
 	git commit -m "manifest" &&
 	cd ..
 else
-	GITREPO="git://github.com/mozilla-b2g/b2g-manifest"
+	GITREPO="git://github.com/UnitedDev/b2g-manifest"
 fi
 
 echo MAKE_FLAGS=-j$((CORE_COUNT + 2)) > .tmp-config
