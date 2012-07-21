@@ -165,6 +165,10 @@ case "$PROJECT" in
 esac
 
 case "$DEVICE" in
+"dream_sapphire")
+	flash_fastboot nounlock $PROJECT
+	;;
+
 "otoro")
 	flash_fastboot nounlock $PROJECT
 	;;
