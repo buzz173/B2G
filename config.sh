@@ -54,8 +54,7 @@ echo GECKO_OBJDIR=$PWD/objdir-gecko >> .tmp-config
 case "$1" in
 "dream_sapphire")
 	echo DEVICE=dream_sapphire >> .tmp-config &&
-	repo_sync dream_sapphire &&
-	(cd device/htc/dream_sapphire && ./extract-files.sh)
+	repo_sync dream_sapphire
 	;;
 
 "galaxy-s2")
