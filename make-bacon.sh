@@ -1,13 +1,11 @@
 #!/bin/sh
-# Copyright (C) 2012 Infinimint
-# http://github.com/Infinimint
-# http://uniteddev.com/
 
+rm -rf rom.zip
 mkdir work
 cd work
 
 # Setup the Folders
-cp -r ../rom-tools/META-INF ./META-INF
+cp -r ../rom-tools/META-INF ./
 mkdir system
 mkdir data
 
@@ -29,9 +27,10 @@ rm ./data/userdata.img
 
 # Create Archive
 zip -ry rom.zip ./*
+java -classpath ../rom-tools/testsign.jar testsign rom.zip rom-signed.zip
 
 # Clean Up
-cp ./rom.zip ../rom.zip
+cp ./rom-signed.zip ../rom.zip
 cd ..
 rm -rf ./work
 
