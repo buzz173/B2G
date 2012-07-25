@@ -52,6 +52,11 @@ echo MAKE_FLAGS=-j$((CORE_COUNT + 2)) > .tmp-config
 echo GECKO_OBJDIR=$PWD/objdir-gecko >> .tmp-config
 
 case "$1" in
+"ds_gb")
+	echo DEVICE=dream_sapphire >> .tmp-config &&
+	repo_sync ds_gb
+	;;
+
 "dream_sapphire")
 	echo DEVICE=dream_sapphire >> .tmp-config &&
 	repo_sync dream_sapphire
