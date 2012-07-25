@@ -3,6 +3,8 @@
 # http://github.com/Infinimint
 # http://uniteddev.com/
 
+. "./.config"
+
 rm -rf rom.zip
 mkdir work
 cd work
@@ -13,9 +15,9 @@ mkdir system
 mkdir data
 
 # Copy the compiled files
-cp ../out/target/product/dream_sapphire/system.img ./system/system.img
-cp ../out/target/product/dream_sapphire/userdata.img ./data/userdata.img
-cp ../out/target/product/dream_sapphire/boot.img ./boot.img
+cp ../out/target/product/$DEVICE/system.img ./system/system.img
+cp ../out/target/product/$DEVICE/userdata.img ./data/userdata.img
+cp ../out/target/product/$DEVICE/boot.img ./boot.img
 
 # Unyaffs the files
 cd system
