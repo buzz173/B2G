@@ -28,7 +28,7 @@ rm ./system/system.img
 rm ./data/userdata.img
 
 # Create Archive
-zip -r rom.zip ./*
+zip -ry rom.zip ./*
 
 # Clean Up
 cp ./rom.zip ../rom.zip
