@@ -1,4 +1,4 @@
-#!/bin/s
+#!/bin/sh
 # Copyright (C) 2012 Infinimint
 # http://github.com/Infinimint
 # http://uniteddev.com/
