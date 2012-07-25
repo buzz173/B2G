@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/s
+# Copyright (C) 2012 Infinimint
+# http://github.com/Infinimint
+# http://uniteddev.com/
 
 rm -rf rom.zip
 mkdir work
