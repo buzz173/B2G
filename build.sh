@@ -21,7 +21,7 @@ else
 		echo Run \|./flash.sh gecko\| to update gecko
 		;;
 	*)
-		echo Run \|./flash.sh\| to flash all partitions of your device
+		echo Run \|./make-bacon.sh\| to create a flashable rom for your device
 		;;
 	esac
 	exit 0
