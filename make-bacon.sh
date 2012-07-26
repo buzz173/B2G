@@ -10,7 +10,7 @@ mkdir work
 cd work
 
 # Setup the Folders
-cp -r ../rom-tools/META-INF ./
+cp -r ../rom-tools/$DEVICE-META-INF ./META-INF
 mkdir system
 mkdir data
 
