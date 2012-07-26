@@ -62,6 +62,11 @@ case "$1" in
 	repo_sync dream_sapphire
 	;;
 
+"hero")
+	echo DEVICE=hero >> .tmp-config &&
+	repo_sync hero
+	;;
+
 "galaxy-s2")
 	echo DEVICE=galaxys2 >> .tmp-config &&
 	repo_sync galaxy-s2 &&
@@ -114,7 +119,9 @@ case "$1" in
 	echo Usage: $0 \(device name\)
 	echo
 	echo Valid devices to configure are:
+	echo - ds_gb
 	echo - dream_sapphire
+	echo - hero
 	echo - galaxy-s2
 	echo - galaxy-nexus
 	echo - nexus-s
